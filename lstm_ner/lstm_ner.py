@@ -6,6 +6,7 @@ from keras.preprocessing.text import Tokenizer
 from sklearn.model_selection import train_test_split
 from keras.preprocessing.sequence import pad_sequences
 import pathlib
+import unittest
 
 
 class LSTM:
@@ -139,5 +140,15 @@ class DataLoader:
         return self.split_data(processed_X, processed_Y)
 
 
+class LstmTest(unittest.TestCase):
+
+    def test_predict(self):
+        lstm = LSTM()
+        model = pickle.load(open("lstm_ner/saved/lstm_model.pickle", 'rb'))
+        tokenizer = pickle.load(open("lstm_ner/saved/tokenizer.pickle", 'rb'))
+        self.assertEqual(lstm.predict('I like Canada', model, tokenizer),
+                         [('Canada', 'B-geo', 7, 13)])
+
+
 if __name__ == '__main__':
-    LSTM().train()
+    unittest.main()
