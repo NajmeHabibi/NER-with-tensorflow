@@ -1,5 +1,7 @@
 # Python application saving extracted named entities of crawled news text corpora into a database:
 
+![ner](https://user-images.githubusercontent.com/42568062/174129808-20fc2fe8-1b32-4005-a036-999eaf2c6ced.png)
+
 ## Example
 `Typical mortgage payment could be 30% higher in 5 years, Bank of Canada says the average price figure can be misleading because it is easily skewed by sales in large expensive markets such as Toronto and Vancouver. So it calculates another number, known as the House Price Index (HPI), which it says is a better gauge of the market because it adjusts for the volume and types of housing. Heaps Estrin, president and CEO of Toronto-based real estate, says the slowdown in Toronto is mostly happening in the suburbs, where prices jumped the most during the pandemic as buyers sought more space`
 
