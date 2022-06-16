@@ -5,7 +5,6 @@
 
 | Entity           | Label         | doc_id      |
 | ---------------- | ------------- | --------    |
-| `Canada`         | `LOC`         | 3           |
 | `Bank of Canada` | `ORG`         | 3           |
 | `Toronto`        | `LOC`         | 3           |
 | `Vancouver`      | `LOC`         | 3           | 
