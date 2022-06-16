@@ -1,9 +1,15 @@
 # Python application saving extracted named entities of crawled news text corpora into a database:
 
-| Entity           | Label         | DocId       |
+
+"Typical mortgage payment could be 30% higher in 5 years, Bank of Canada warns CREA says the average price figure can be misleading because it is easily skewed by sales in large expensive markets such as Toronto and Vancouver. So it calculates another number, known as the House Price Index (HPI), which it says is a better gauge of the market because it adjusts for the volume and types of housing."
+
+| Entity           | Label         | doc_id      |
 | ---------------- | ------------- | --------    |
 | `Canada`         | `LOC`         | 3           |
 | `Bank of Canada` | `ORG`         | 3           |
+| `Toronto`        | `LOC`         | 3           |
+| `Vancouver`      | `LOC`         | 3           | 
+| `HPI`            | `ORG`         | 3           |
 
 
 * First, we implement a `crawler.NewsCrawler` class, crawling news from [CBC News website](https://www.cbc.ca/news) of different categories 
