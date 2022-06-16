@@ -1,5 +1,11 @@
 # Python application saving extracted named entities of crawled news text corpora into a database:
 
+| Entity           | Label         | DocId       |
+| ---------------- | ------------- | --------    |
+| `Canada`         | `LOC`         | 3           |
+| `Bank of Canada` | `ORG`         | 3           |
+
+
 * First, we implement a `crawler.NewsCrawler` class, crawling news from [CBC News website](https://www.cbc.ca/news) of different categories 
 * Then, we use one of the three designed NER models, namely `ners.BertNER`, `ners.LstmNER`, and `ners.SpacyNER` (sorted here from higher to lower accuracy performance), to extract named entities of each crawled news text one by one in `main.py`
   * In `ners.BertNER`, we use the pretrained model `dslim/bert-base-NER` of `transformers` library, which is a fine-tuned version of BERT for NER task
